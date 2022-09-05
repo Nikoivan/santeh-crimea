@@ -154,7 +154,7 @@ body {
 
 .page__title {
   font-family: "Open Sans Regular", sans-serif;
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
   font-size: 2rem;
   color: #fff;
@@ -197,8 +197,9 @@ body {
 }
 
 .application-btn {
-  background-color: #be6823;
+  background-color: #2b929b;
   min-width: 260px;
+  letter-spacing: 1.3px;
   min-height: 48px;
   padding: 1rem;
   border: none;
@@ -209,6 +210,7 @@ body {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .trend-list__header {
@@ -220,6 +222,108 @@ body {
   color: #000;
   font-weight: bold;
   text-align: center;
+}
+
+.trend-list-container {
+  padding: 1rem;
+}
+
+.trend {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+
+.trend::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.55;
+}
+
+.trend:first-child {
+  background-image: url(../images/heating_radiators.jpg);
+}
+
+.trend:nth-child(2) {
+  background-image: url(../images/water_heater.jpg);
+}
+
+.trend:nth-child(3) {
+  background-image: url(../images/underfloor_heating.jpg);
+}
+
+.trend:nth-child(4) {
+  background-image: url(../images/sewage_system.jpg);
+}
+
+.trend-container {
+  position: relative;
+  z-index: 3;
+  padding: 2rem;
+  border: 3px solid #3696b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.tag-list {
+  list-style-type: none;
+}
+
+.tag-item {
+  display: inline-block;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tag {
+  color: #fde652;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.trend__title {
+  margin-top: 1rem;
+  font-size: 18px;
+  color: #fff;
+}
+
+.main {
+  padding: 0 1rem;
+}
+
+.services__header {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.services__title {
+  font-family: "Open Sans Bold";
+  font-size: 24px;
+}
+
+.services-list {
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 1000px) {
