@@ -928,6 +928,7 @@ li > .social__link {
 }
 
 .form__wrapper {
+  display: none;
   background-color: #3f3737;
 }
 
